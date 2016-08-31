@@ -1,0 +1,280 @@
+.content {
+    width: 1300px;
+    margin: 45px auto 0;
+    overflow: hidden;
+    .c-l {
+        width: 283px;
+        background-color: #f3f4f7;
+        float: left;
+        padding-bottom: 9999px;
+        margin-bottom: -9999px;
+        overflow: hidden;
+        .info {
+            text-align: center;
+            height: 120px;
+            width: 100%;
+            background: #0c70bf url(../img/casebg.png) no-repeat;
+            h2 {
+                line-height: 120px;
+                font-size: 28px;
+                font-weight: bold;
+                color: #FFF;
+            }
+        }
+        .casenav {
+            width: 100%;
+            height: 55px;
+            background-color: #0c70bf;
+            position: relative;
+            margin-top: 10px;
+            i {
+                width: 7px;
+                height: 10px;
+                background: url(../img/icon01.png) no-repeat;
+                background-position: -90px 0;
+                float: left;
+                line-height: 55px;
+                top: 50%;
+                margin-top: -5px;
+                position: absolute;
+                left: 10px;
+            }
+            span {
+                padding-left: 22px;
+                line-height: 55px;
+                font-size: 16px;
+                color: #fff;
+                float: left;
+            }
+        }
+    }
+    .c-r {
+        width: 1000px;
+        float: left;
+        background-color: #FFF;
+        padding-bottom: 98px;
+        .show-info {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            padding: 0 35px;
+            h2 {
+                font-size: 22px;
+                font-weight: bold;
+                color: #4d4d4d;
+                float: left;
+            }
+            .link {
+                float: right;
+                i {}
+                span {
+                    font-size: 12px;
+                    color: #717171;
+                }
+                a {
+                    span {
+                        font-size: 12px;
+                        color: #717171;
+                    }
+                }
+            }
+        }
+        .casepage {
+            ul {
+                width: 960px;
+                margin: 30px auto;
+                li {
+                    width: 450px;
+                    height: 315px;
+                    margin: 15px;
+                    float: left;
+                    cursor: pointer;
+                    position: relative;
+                    &:hover {
+                        .caseinner {
+                            display: block;
+                        }
+                        .caseinfo {
+                            background-color: #0c70bf;
+                            span {
+                                color: #FFF;
+                            }
+                        }
+                    }
+                    .caseimg {
+                        overflow: hidden;
+                        width: 450px;
+                        height: 275px;
+                        background: url(../img/case01.jpg) no-repeat 50% 50%;
+                    }
+                    .caseinner {
+                        width: 450px;
+                        height: 275px;
+                        background: #000;
+                        opacity: 0.3;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        display: none;
+                        i {
+                            width: 94px;
+                            height: 90px;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            margin: -47px 0 0 -45px;
+                            z-index: 2;
+                            background: url(../img/seachicon.png) no-repeat;
+                        }
+                    }
+                    .caseinfo {
+                        width: 100%;
+                        height: 45px;
+                        background-color: #ededed;
+                        text-align: center;
+                        span {
+                            color: #3a3a3a;
+                            line-height: 45px;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            .flip {
+                width: 960px;
+                margin: 0 auto;
+                text-align: center;
+                margin-top: 70px;
+                .btn-on {
+                    background-color: #0c70bf;
+                }
+                span {
+                    display: inline-block;
+                    width: 35px;
+                    height: 35px;
+                    background-color: #999999;
+                    line-height: 35px;
+                    font-size: 12px;
+                    color: #FFF;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: #0c70bf;
+                    }
+                }
+            }
+        }
+        .case-inner {
+            display: none;
+            margin: 30px auto;
+            width: 930px;
+            h2 {
+                color: #0c70bf;
+                font-size: 26px;
+                font-weight: normal;
+            }
+            img {
+                margin:33px 0 10px;
+            }
+            p {
+                color: #2f2f2f;
+                font-size: 14px;
+                line-height: 34px;
+            }
+            .next-case {
+                margin-top: 70px;
+                cursor: pointer;
+                display: block;
+                border-top: 1px dotted #dddddd;
+                line-height: 50px;
+                padding-left: 30px;
+                i {
+                    width: 8px;
+                    height: 8px;
+                    border-top: 1px solid #c1c1c1;
+                    border-left: 1px solid #c1c1c1;
+                    display: inline-block;
+                    transform: rotate(45deg);
+                    margin-right: 5px;
+                }
+            }
+            .previous-case {
+                cursor: pointer;
+                padding-left: 30px;
+                line-height: 50px;
+                border-top: 1px dotted #dddddd;
+                border-bottom: 1px dotted #dddddd;
+                display: block;
+                i {
+                    width: 8px;
+                    height: 8px;
+                    border-top: 1px solid #c1c1c1;
+                    border-left: 1px solid #c1c1c1;
+                    display: inline-block;
+                    transform: rotate(-135deg);
+                    margin-right: 5px;
+                }
+            }
+            .case-page {
+                cursor: pointer;
+                margin: 25px 0 0 30px;
+                background: url(../img/casepage.png) no-repeat;
+                width: 91px;
+                height: 32px;
+                display: inline-block;
+                line-height: 30px;
+                color: #666666;
+                font-size: 12px;
+                padding-left: 32px;
+            }
+            .share {
+                float: right;
+                display: inline-block;
+                margin-top: 33px;
+                span {
+                    display: inline-block;
+                    font-size: 12px;
+                    color: #666666;
+                    float: left;
+                }
+                ul {
+                    float: left;
+                    li {
+                        float: left;
+                        width: 16px;
+                        height: 16px;
+                        margin-right: 4px;
+                        i {
+                            display: block;
+                            width: 16px;
+                            height: 16px;
+                            background: url(../img/share.png) no-repeat
+                        }
+                        &:nth-child(2) i {
+                            background-position: -20px 0;
+                        }
+                        &:nth-child(3) i {
+                            background-position: -40px 0;
+                        }
+                        &:nth-child(4) i {
+                            background-position: -60px 0;
+                        }
+                        &:nth-child(5) i {
+                            background-position: -80px 0;
+                        }
+                        &:nth-child(6) i {
+                            background-position: -100px 0;
+                        }
+                        &:last-child{
+                            margin-right: 4px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+.bglogo{
+    background: url(../img/bglogo.jpg) no-repeat 50% 50%;
+}

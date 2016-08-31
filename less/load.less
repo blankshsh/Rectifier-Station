@@ -1,0 +1,339 @@
+body,
+div,
+p,
+nav,
+header,
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+span {
+    margin: 0;
+    padding: 0;
+    zoom: 1;
+    _zoom: 1;
+}
+
+body {
+    font-family: "微软雅黑";
+}
+
+a {
+    text-decoration: none;
+}
+
+.cf:after {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+header {
+    width: 100%;
+    min-width: 1300px;
+    background-color: #ebf1f7;
+    .headerbox {
+        width: 1300px;
+        margin: 0 auto;
+        .logo {
+            width: 269px;
+            height: 73px;
+            background: url("../img/logo.png") no-repeat;
+            float: left;
+            margin-top: 20px;
+        }
+        .seachbox {
+            padding-top: 25px;
+            float: right;
+            .seach {
+                position: relative;
+                float: left;
+                padding-right: 15px;
+                input {
+                    box-sizing: border-box;
+                    width: 178px;
+                    height: 23px;
+                    -webkit-border-radius: 11px;
+                    -moz-border-radius: 11px;
+                    border-radius: 11px;
+                    background-color: #fff;
+                    border: 1px solid #b5b5b5;
+                    padding-left: 10px;
+                    line-height: 23px;
+                    font-size: 12px;
+                    font-family: "微软雅黑";
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                .seach-logo {
+                    width: 18px;
+                    height: 18px;
+                    background: url(../img/icon01.png) no-repeat;
+                    position: absolute;
+                    right: 25px;
+                    top: 50%;
+                    margin-top: -9px;
+                }
+            }
+            .language {
+                float: left;
+                padding: 0 15px;
+                border-left: 1px solid #959595;
+                border-right: 1px solid #959595;
+                i {
+                    width: 20px;
+                    height: 20px;
+                    background: url(../img/icon01.png) no-repeat;
+                    float: left;
+                    background-position: -30px 0px;
+                    margin-top: 2px;
+                    padding-right: 6px;
+                }
+                a span {
+                    font-size: 12px;
+                    line-height: 23px;
+                    color: #959595;
+                }
+            }
+            .mail {
+                float: left;
+                padding-left: 15px;
+                i {
+                    width: 21px;
+                    height: 13px;
+                    background: url(../img/icon01.png) no-repeat;
+                    float: left;
+                    background-position: -60px 0px;
+                    margin-top: 6px;
+                    padding-right: 6px;
+                }
+                a span {
+                    font-size: 12px;
+                    line-height: 19px;
+                    color: #959595;
+                }
+            }
+        }
+        nav {
+            float: right;
+            ul {
+                .fonton {
+                    color: #ff6000;
+                }
+                li {
+                    float: left;
+                    position: relative;
+                    a {
+                        cursor: pointer;
+                        font-size: 16px;
+                        width: 90px;
+                        padding: 20px 20px;
+                        text-align: center;
+                        line-height: 16px;
+                        display: inline-block;
+                        &:hover {
+                            color: #ff6000;
+                        }
+                    }
+                    .navon {
+                        background-color: #ff6000;
+                    }
+                    .navon-imp {
+                        background-color: #ff6000;
+                    }
+                    span {
+                        width: 90px;
+                        height: 3px;
+                        position: absolute;
+                        bottom: -3px;
+                        left: 50%;
+                        margin-left: -45px;
+                    }
+                    a {
+                        color: #2f2f2f;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bglogo {
+    width: 100%;
+    height: 434px;
+}
+
+footer {
+    width: 100%;
+    margin: 90px auto 0;
+    .link {
+        background: url(../img/footer.jpg) no-repeat;
+        .linkbox {
+            width: 1300px;
+            height: 133px;
+            ul {
+                width: 100%;
+                height: 100%;
+                li {
+                    height: 100%;
+                    width: 260px;
+                    float: left;
+                    position: relative;
+                    cursor: pointer;
+                    i {
+                        position: absolute;
+                        width: 52px;
+                        height: 52px;
+                        background: url(../img/footericon.png);
+                        display: block;
+                        top: 25px;
+                        left: 50%;
+                        margin-left: -26px;
+                    }
+                    span {
+                        color: #FFF;
+                        font-size: 16px;
+                        text-align: center;
+                        display: block;
+                        padding-top: 90px;
+                    }
+                }
+            }
+        }
+    }
+    .load {
+        padding-top: 50px;
+        padding-bottom: 20px;
+        width: 100%;
+        background-color: #eaeaea;
+        .loadbox {
+            width: 1300px;
+            margin: 0 auto;
+            .load-info {
+                margin-right: 109px;
+                float: left;
+                h2 {
+                    color: #18489b;
+                    font-size: 18px;
+                    padding-bottom: 15px;
+                }
+                ul {
+                    float: left;
+                    width: 165px;
+                    li {
+                        color: #5b5b5b;
+                        font-size: 13px;
+                        line-height: 35px;
+                        float: left;
+                        width: 100%;
+                        text-align: left;
+                        a {
+                            color: #5b5b5b;
+                        }
+                    }
+                }
+            }
+            .us {
+                float: left;
+                h2 {
+                    color: #18489b;
+                    font-size: 18px;
+                    padding-bottom: 15px;
+                }
+                ul {
+                    position: relative;
+                    li {
+                        h3 {
+                            color: #5b5b5b;
+                            font-size: 13px;
+                            line-height: 26px;
+                            display: inline-block;
+                        }
+                    }
+                    .us-link {
+                        h3 {
+                            color: #5b5b5b;
+                            font-size: 13px;
+                            line-height: 26px;
+                            display: inline-block;
+                            line-height: 46px;
+                            margin-top: 10px;
+                        }
+                        .weibo {
+                            display: inline-block;
+                            width: 46px;
+                            height: 46px;
+                            position: absolute;
+                            margin-top: 10px;
+                            margin-left: 20px;
+                            background: url(../img/usicon.png) no-repeat;
+                        }
+                        .weixin {
+                            display: inline-block;
+                            width: 46px;
+                            height: 46px;
+                            position: absolute;
+                            margin-top: 10px;
+                            margin-left: 86px;
+                            background: url(../img/usicon.png) no-repeat;
+                            background-position: -60px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .other {
+        background-color: #747474;
+        width: 100%;
+        .otherbox {
+            padding-top: 26px;
+            padding-bottom: 26px;
+            strong {
+                font-size: 13px;
+                color: #fefefe;
+                float: left;
+                padding-left: 5px;
+            }
+            ul {
+                float: right;
+                li {
+                    float: left;
+                    width: 77px;
+                    line-height: 13px;
+                    border-left: 1px solid #FFF;
+                    border-right: 1px solid #FFF;
+                    text-align: center;
+                    a {
+                        color: #FFF;
+                        font-size: 13px;
+                        text-align: center;
+                    }
+                }
+            }
+            li:first-child {
+                border-left: 0;
+            }
+            li:last-child {
+                border-right: 0;
+            }
+        }
+    }
+}
+
+.wrp {
+    min-width: 1300px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+}

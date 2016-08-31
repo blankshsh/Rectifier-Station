@@ -1,0 +1,100 @@
+body,
+div,
+p,
+nav,
+header,
+h1,
+{
+    margin: 0;
+    padding: 0;
+    zoom: 1;
+    _zoom: 1
+}
+
+body {
+    font-family: "微软雅黑";
+}
+
+a {
+    text-decoration: none;
+}
+
+.cf:after {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+header {
+    width: 1300px;
+    height: 120px;
+}
+
+header .logo {
+    width: 269px;
+    height: 73px;
+    background: url("../img/logo.png") no-repeat;
+    float: left;
+}
+
+header .seachbox {
+    float: right;
+}
+
+header .seachbox .seach {
+    position: relative;
+}
+
+header .seachbox .seach input {
+    width: 178px;
+    height: 23px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    border-radius: 11px;
+    background-color: #fff;
+    border: 1px solid #b5b5b5;
+    padding-left: 10px;
+    line-height: 23px;
+    font-size: 12px;
+    font-family: "微软雅黑";
+}
+
+header .seachbox .seach input:focus {
+    outline: none;
+}
+
+header .seachbox .seach .seach-logo {
+    width: 18px;
+    height: 18px;
+    background: url("../img/icon01.png") no-repeat;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -9px;
+}
+
+header nav ul {}
+
+header nav ul li {
+    cursor: pointer;
+    font-size: 16px;
+    width: 90px;
+    padding: 20px 20px;
+    float: left;
+}
+
+header nav ul li a {
+    color: #2f2f2f;
+}
+
+header nav ul li a:hover {
+    color: #ff6000
+}

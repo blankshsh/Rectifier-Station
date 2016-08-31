@@ -1,0 +1,301 @@
+.content {
+    width: 1300px;
+    margin: 45px auto 0;
+    overflow: hidden;
+    .c-l {
+        width: 283px;
+        background-color: #f3f4f7;
+        float: left;
+        padding-bottom: 9999px;
+        margin-bottom: -9999px;
+        overflow: hidden;
+        .info {
+            text-align: center;
+            margin-bottom: 10px;
+            height: 120px;
+            width: 100%;
+            background: #0c70bf url(../img/casebg.png) no-repeat;
+            h2 {
+                line-height: 120px;
+                font-size: 28px;
+                font-weight: bold;
+                color: #FFF;
+            }
+        }
+        .casenav {
+            cursor: pointer;
+            width: 100%;
+            height: 55px;
+            background-color: #f3f4f7;
+            position: relative;
+            padding-left: 45px;
+            border-top: 1px solid #e6e6e6;
+            i {
+                width: 9px;
+                height: 11px;
+                background: url(../img/playicon.png) no-repeat;
+                float: left;
+                line-height: 55px;
+                top: 50%;
+                margin-top: -5px;
+                position: absolute;
+            }
+            span {
+                padding-left: 15px;
+                line-height: 55px;
+                font-size: 16px;
+                color: #353535;
+                float: left;
+                cursor: pointer;
+            }
+        }
+        .casenavon {
+            background-color: #0c70bf;
+            span {
+                color: #FFF;
+            }
+            i {
+                background: url(../img/icon01.png) no-repeat;
+                background-position: -88px 0;
+            }
+        }
+    }
+    .c-r {
+        width: 1000px;
+        float: left;
+        background-color: #FFF;
+        padding-bottom: 98px;
+        .show-info {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            padding: 0 35px;
+            .goback {
+                cursor: pointer;
+            }
+            h2 {
+                font-size: 22px;
+                font-weight: bold;
+                color: #4d4d4d;
+                float: left;
+            }
+            .link {
+                float: right;
+                i {}
+                span {
+                    font-size: 12px;
+                    color: #717171;
+                }
+                a {
+                    span {
+                        font-size: 12px;
+                        color: #717171;
+                    }
+                }
+            }
+        }
+        .showbox {
+            .recruit {
+                display: none;
+                width: 920px;
+                margin: 45px auto;
+                .conceptbox {
+                    background-color: #f3f4f7;
+                    .concept {
+                        width: 540px;
+                        height: 230px;
+                        float: left;
+                        h3 {
+                            font-size: 18px;
+                            color: #0c70bf;
+                            padding: 25px 0 0 25px;
+                            display: block;
+                        }
+                        p {
+                            font-size: 13px;
+                            color: #575757;
+                            margin-top: 25px;
+                            display: block;
+                            padding: 0 25px;
+                        }
+                    }
+                    .recruit-bg {
+                        width: 380px;
+                        height: 230px;
+                        background: url(../img/contact/recruit.jpg) no-repeat 30% 85%;
+                        float: left;
+                    }
+                }
+                ul {
+                    margin-top: 40px;
+                    width: 100%;
+                    border-top: 1px dotted #dddddd;
+                    line-height: 55px;
+                    h3 {
+                        line-height: 75px;
+                        font-size: 18px;
+                        color: #0c70bf;
+                        padding-left: 25px;
+                    }
+                    .i-on {
+                        background-position: -30px 0;
+                    }
+                    &:last-child {
+                        border-bottom: 1px solid #c4c4c4;
+                    }
+                    li {
+                        cursor: pointer;
+                        height: 55px;
+                        width: 100%;
+                        border-top: 1px solid #c4c4c4;
+                        position: relative;
+                        .num {
+                            position: absolute;
+                            left: 35px;
+                            color: #0c70bf;
+                        }
+                        .name {
+                            position: absolute;
+                            left: 90px;
+                        }
+                        .time {
+                            position: absolute;
+                            right: 320px;
+                        }
+                        a {
+                            i {
+                                position: absolute;
+                                top: 50%;
+                                right: 60px;
+                                margin-top: -15px;
+                                width: 30px;
+                                height: 30px;
+                                display: inline-block;
+                                background: url(../img/contact/recruit.png) no-repeat;
+                            }
+                        }
+                    }
+                }
+                .flip {
+                    width: 960px;
+                    margin: 0 auto;
+                    text-align: center;
+                    margin-top: 70px;
+                    .btn-on {
+                        background-color: #0c70bf;
+                    }
+                    span {
+                        display: inline-block;
+                        width: 35px;
+                        height: 35px;
+                        background-color: #999999;
+                        line-height: 35px;
+                        font-size: 12px;
+                        color: #FFF;
+                        cursor: pointer;
+                        &:hover {
+                            background-color: #0c70bf;
+                        }
+                    }
+                }
+            }
+            .recruit-inner {
+                width: 920px;
+                margin: 45px auto;
+                display: none;
+                .place {
+                    h2 {
+                        color: #0c70bf;
+                        font-size: 22px;
+                        font-weight: normal;
+                    }
+                    span {
+                        display: block;
+                        margin-top: 25px;
+                        font-size: 14px;
+                        color: #2e2e2e;
+                    }
+                }
+                .place-info {
+                    margin-top: 30px;
+                    border-top: 1px dotted #dddddd;
+                    h3 {
+                        line-height: 70px;
+                        color: #000;
+                        font-size: 16px;
+                        font-weight: normal;
+                    }
+                    p {
+                        font-size: 14px;
+                        color: #000;
+                        line-height: 28px;
+                    }
+                }
+            }
+            .declaration {
+                width: 920px;
+                margin: 45px auto;
+                display: none;
+                p {
+                    margin-top: 40px;
+                    line-height: 27px;
+                    color: #2f2f2f;
+                    font-size: 14px;
+                    text-indent: 2em;
+                }
+                span {
+                    line-height: 27px;
+                    color: #2f2f2f;
+                    font-size: 14px;
+                    text-indent: 2em;
+                    display: block;
+                }
+            }
+            .sitemap {
+                width: 920px;
+                margin: 45px auto;
+                h3 {
+                    
+                    display: block;
+                    background-color: #efefef;
+                    padding-left: 18px;
+                    a {
+                        color: #0c70bf;
+                        line-height: 30px;
+                        font-size: 14px;
+                        font-weight: normal;
+                    }
+                }
+                span {
+                    display: block;
+                    padding: 15px 0;
+                    height: 50px;
+                    box-sizing: border-box;
+                    &:after {
+                        content: '.';
+                        display: block;
+                        clear: both;
+                        height: 0;
+                        overflow: hidden;
+                        visibility: hidden;
+                    }
+                    a {
+                        line-height: 20px;
+                        font-size: 12px;
+                        display: block;
+                        color: #5b5b5b;
+                        border-left: 1px solid #5b5b5b;
+                        padding: 0 18px;
+                        float: left;
+                        &:first-child {
+                            border-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bglogo {
+    background: url(../img/bglogo.jpg) no-repeat 50% 50%;
+}
