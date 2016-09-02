@@ -155,9 +155,10 @@
             float: left;
             text-align: center;
             position: relative;
-            filter: grayscale(70%);
             &:hover {
-                filter: grayscale(70%);
+                span{
+                    background: rgba(12, 112, 191, 0);
+                }
             }
             .span {
                 span {
@@ -172,6 +173,9 @@
                 display: block;
                 color: #FFF;
                 z-index: 10;
+                background: rgba(12, 112, 191, .5);
+                height: 159px;
+                width: 212px;
             }
             //         .bg{
             //          background-color: #065a9c;
@@ -392,7 +396,7 @@
             }
             .iest {
                 padding-bottom: 30px;
-                .iestbox+.iestbox{
+                .iestbox+.iestbox {
                     margin-left: 22px;
                 }
                 .iestbox {
@@ -400,7 +404,6 @@
                     height: 223px;
                     box-sizing: border-box;
                     float: left;
-
                     .img {
                         height: 180px;
                         box-sizing: border-box;

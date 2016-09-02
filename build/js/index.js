@@ -58,4 +58,84 @@ $(document).ready(function() {
     $("nav ul li").on("mouseleave", function() {
         $(this).children("span").removeClass("navon");
     })
+
+
+    location();
+    $(window).resize(function() {
+        location();
+    })
+
+
+
+    function location() {
+        var maxwidth = $(window).width();
+        if (maxwidth < 1300) {
+            maxwidth = 1300;
+        }
+        var box = $(".showinner ul"),
+            boxinner = $(".showinner ul li"),
+            i = 1,
+            imgnum = box.children().length;
+        box.width(maxwidth * 5);
+        boxinner.width(maxwidth);
+        box.css("margin-left", -maxwidth);
+        move();
+        $(".dot span").each(function(index) {
+            $(".dot span").on('click', function() {
+                var bgnum = $(this).index();
+                i = bgnum + 1;
+                switch (true) {
+                    case bgnum == 0:
+                        box.stop().animate({
+                            "margin-left": -maxwidth
+                        }, 500)
+                        $(".dot span").eq(bgnum).addClass("dot-on").siblings().removeClass("dot-on");
+                        break;
+                    case bgnum == 1:
+                        box.stop().animate({
+                            "margin-left": -maxwidth * 2
+                        }, 500)
+                        $(".dot span").eq(bgnum).addClass("dot-on").siblings().removeClass("dot-on");
+                        break;
+                    case bgnum == 2:
+                        box.stop().animate({
+                            "margin-left": -maxwidth * 3
+                        }, 500)
+                        $(".dot span").eq(bgnum).addClass("dot-on").siblings().removeClass("dot-on");
+                        break;
+                }
+            })
+        })
+        var t = setInterval(function() {
+            i++;
+            move();
+        }, 3000)
+        $(".showinner ul").hover(function() {
+            clearInterval(t);
+        }, function() {
+            t = setInterval(function() {
+                i++;
+                move();
+            }, 3000)
+        })
+
+        function move() {
+            console.log(maxwidth);
+            if (i == imgnum) {
+                box.css({
+                    "margin-left": -maxwidth
+                })
+                i = 2;
+            }
+            box.stop().animate({
+                "margin-left": -i * maxwidth + "px"
+            }, 500);
+
+            if (i == imgnum - 1) {
+                $(".dot span").eq(0).addClass("dot-on").siblings().removeClass("dot-on");
+            } else {
+                $(".dot span").eq(i - 1).addClass("dot-on").siblings().removeClass("dot-on");
+            }
+        }
+    }
 })
